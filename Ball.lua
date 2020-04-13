@@ -29,6 +29,7 @@ end
     on both axes.
 ]]
 function Ball:reset()
+    -- Uses global variables
     self.x = VIRTUAL_WIDTH / 2 - 2
     self.y = VIRTUAL_HEIGHT / 2 - 2
     self.dx = math.random(2) == 1 and -100 or 100
